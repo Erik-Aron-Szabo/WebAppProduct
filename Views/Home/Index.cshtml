@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Get ready for the xenomorph invasion!">
+        <title>Buy Your Xenomorph Spray!</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+
+    <div class="email">
+        <label class="email_list">Subscribe to our e-mail list!</label>
+        <form method="post" asp-controller="Home" asp-action="Subscribe">
+            <input type="text"  name="email" />
+            <input type="submit" value="Subscribe" />
+        </form>
+    </div>
+
+    <body>
+        <link rel="stylesheet" href="styles.css">
+        <h1><left>Buy Your Xenomorph Spray NOW!</left></h1>
+        <h2>Before it's too late...</h2>
+        <hr />
+        <br />
+        <h3><center><b>Mega Spray</b><center></h3>
+            <p>
+            Only $39.52
+            <img height="120" src="~/Images/Mega.png" alt="Mega Spray" />
+            <br />
+            <br>
+        <h3><center><b>Super Spray</b>
+            <p>
+            Only $8.88
+            <img height="120" src="~/Images/Super.png" alt="Super Spray" />
+            <br />
+            <br>
+        <h3><center><b>Good Spray</b>
+            <p>
+            Only $4.10
+            <img height="120" src="~/Images/Good.png" alt="Good Spray" />
+            <br>
+            <br />
+        <h3><center><b>Normal Spray</b>
+            <p>
+            Only $2.00
+            <img height="120" src="~/Images/Normal.png" alt="Normal Spray" />
+            <p><small>(But, that's not gonna work...)</small>
+    </body>
+</div>
